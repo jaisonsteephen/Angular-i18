@@ -44,3 +44,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+rm -rf ~/.local/share/pnpm
+pnpm config set store-dir /var/tmp/pnpm_store --global
+pnpm add -D @angular/cli@18.0.0 @angular-devkit/build-angular@18.0.0 @angular/core@18.0.0 @angular/common@18.0.0 @angular/platform-browser-dynamic@18.0.0
+pnpm add -D cypress
+pnpm add -g cypress
+ng new angularcypressprj --package-manager=pnpm
+pnpm cypress open
