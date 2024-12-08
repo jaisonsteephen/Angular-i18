@@ -47,9 +47,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 rm -rf ~/.local/share/pnpm
+
 pnpm config set store-dir /var/tmp/pnpm_store --global
+
 pnpm add -D @angular/cli@18.0.0 @angular-devkit/build-angular@18.0.0 @angular/core@18.0.0 @angular/common@18.0.0 @angular/platform-browser-dynamic@18.0.0
+
 pnpm add -D cypress
+
 pnpm add -g cypress
+
 ng new angularcypressprj --package-manager=pnpm
+
 pnpm cypress open
